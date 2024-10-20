@@ -1,4 +1,4 @@
-/*
+
 ---1:
 
 select deptnum , deptname from dept
@@ -20,7 +20,7 @@ order by codeP;*/
 select e.empnum , e.empname , namep from  PROJECT p, Participation par , emp e
 where (p.CODEP=par.CODEP)and(par.empNum=e.empNUM)
 GROUP by(e.empname , e.empnum , namep);
-/*
+
 select p.codeP , e.empnum , e.empname from emp e , project p
 GROUP BY(e.empnum , e.empname);
 
@@ -56,6 +56,6 @@ where salary between 6000 and 10000;
 
 select empname from emp
 where empNum not in (select empnum from Participation);
-*/
+
 ---14:
 ---15:
